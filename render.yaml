@@ -1,8 +1,4 @@
-services:
-  - type: web
-    name: invoice_processor
-    env: python
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
-    runtime: python3.12  # Specify your Python version
+runtime: python
+version: 3.9
+build_command: pip install -r requirements.txt
+command: gunicorn app:app
