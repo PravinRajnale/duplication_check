@@ -1,0 +1,67 @@
+body {
+    background-color: #f0f2f5; /* Light background for contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.container-fluid {
+    height: 100%; /* Full height for the container */
+}
+
+.card {
+    border: none; /* Remove border */
+    border-radius: 15px; /* Rounded corners */
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #ffffff; /* White background for the card */
+}
+
+.card-title {
+    color: #343a40; /* Dark text for the title */
+    font-weight: bold; /* Bold title */
+    font-size: 24px; /* Larger font size */
+    margin-bottom: 20px; /* Space below title */
+}
+
+/* Table Styles */
+.table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+.table th, .table td {
+    border: 2px solid #343a40; /* Dark border color for the table cells */
+    padding: 10px; /* Add some padding for better readability */
+    white-space: nowrap; /* Prevent wrapping in table cells */
+}
+
+.table th {
+    background-color: #343a40; /* Dark header background */
+    color: #ffffff; /* White text for headers */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 123, 255, 0.05); /* Light blue background for odd rows */
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue on row hover */
+}
+
+/* For responsive table container */
+.table-container {
+    overflow: hidden; /* Disable scrolling */
+    width: 100%; /* Ensure the container is full width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+    }
+}
